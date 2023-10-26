@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="signup.css">
+        <link rel="icon" type="image/x-icon" href="logo.html">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <p><a href="oer.html"><img src="logo.html" width="100" height="100"></a></p>
+            </div>
+            <div class="title">
+                <h1> SWAMI VIVEKANANDA INSTITUTE OF TECHNOLOGY</h1>
+                <h4>Mahbub College Campus,Patny Center,S.D. Road,<br> Secunderabad-500003.</h4>
+                <h3>ONLINE EXAM REGISTRATION</h3>
+            </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="timetable.html">Time Table</a>
+            <a href="exreg.html">Exam Registration</a>
+            <a href="admitcard.html">Admit Card Download</a>
+            <a href="result.html">Result</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="index.html">Logout</a>
+        </div>
+        <hr>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+        <hr>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <div class="signup-box">
+            <h1>Sign Up</h1>
+            <form>
+                <label>First Name</label><br>
+                    <input type="text" placeholder="" required><br><br>
+                <label>Middle Name</label><br>
+                    <input type="text" placeholder="" required><br><br>
+                <label>Last Name</label><br>
+                    <input type="text" placeholder="" required><br><br>
+                <label>Email id</label><br>
+                    <input type="email" placeholder="" required><br><br>
+                <label>Mother's Name</label><br>
+                    <input type="text" placeholder=""><br><br>
+                <label>Father's Name</label><br>
+                    <input type="text" placeholder=""><br><br>
+                <label>Date of Birth</label><br>
+                    <input type="date" id="birthday" name="birthday" required><br><br>
+                <label>Age</label><br>
+                    <input type="number" placeholder=""><br><br>
+                <label>Gender</label><br>
+                    <input type="text" placeholder="" required><br><br>
+                <label>Mobile Number</label><br>
+                    <input type="number" placeholder="" required><br><br>
+                <label for="Department">Department</label><br>
+                 <select name="Department" id="Department" required>
+                    <option value="cse">Computer Science and Engineering</option>
+                    <option value="ece">Electronic & Communication Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="h&s">Humanities & Sciences</option>
+                    <option value="it">Information Technology</option>
+                    <option value="mba">Masters in Business Administration</option>
+                 </select><br><br>
+                <label for="Branch">Choose your Branch</label><br>
+                    <select name="Branch" id="Branch" required>
+                     <option value="ai&ml">Artificial Intelligence & Machine Learning</option>
+                     <option value="ds">Data Science</option>
+                     <option value="cs">Cyber Security</option>
+                     <option value="iot">Internet of Things</option>
+                     <option value="ai&ds">Artificial Intelligence & Data Science</option>
+                     <option value="it">Information Technology</option>
+                    </select><br><br>
+                <label for="Year">Choose your Year</label><br>
+                    <select name="Year" id="Year" required>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                    </select><br>
+                <label for="Roll Number">Roll Number</label><br>
+                    <input type="text" name="" placeholder="" required><br>
+                <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd" minlength="8"><br>
+                <label>Confirm password</label>
+                    <input type="password" placeholder="">
+                     <input type="button" value="Submit">
+            </form>
+            <p> &nbsp;&nbsp; By clicking the Sign Up button, you agree to our<br>
+                <a href="#">&nbsp;Terms and Conditions</a> and <a href="#">Policy and Privacy</a> 
+            </p>
+            <p class="para-2">&nbsp;&nbsp;Already have an account? <a href="signin.html">Login here</a></p>
+        </div>
+    </body>
